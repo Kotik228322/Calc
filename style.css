@@ -1,0 +1,112 @@
+/*
+colors
+bg #000
+orange #ff9501
+grey #a6a6a6
+white #fdfdfd
+ */
+
+.calc {
+    top: 200px;
+    margin: auto;
+    width: 260px;
+    height: 550px;
+    border: 10px solid #830606;
+    border-radius: 50px;
+    background: #000;
+    color: #fff;
+    font-family: "Arial", serif;
+    padding: 18px;
+    box-shadow: 20px 20px 20px #4f4f4f;
+    position: relative;
+}
+
+.top-cam {
+    width: 100px;
+    height: 17px;
+    background: rgba(0, 0, 0, 0.36);
+    border-radius: 50px;
+    position: absolute;
+    margin-top: -4px;
+    margin-left: 77px;
+    border: 1px solid rgba(255, 255, 255, 0.17);
+}
+
+.calc-screen {
+    height: 125px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    margin-bottom: 35px;
+}
+
+.calc-screen p {
+    text-align: right;
+    font-size: 4rem;
+    position: relative;
+    top: 40px;
+}
+
+.buttons {
+    padding-top: 20px;
+    display: grid;
+    grid-template-areas:
+    "ac plus-minus persent division"
+    "seven eigth nine multi"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+    grid-gap: 7px;
+    justify-items: center;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    background: #333;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.btn.zero {
+    grid-area: zero;
+    width: 130px;
+    border-radius: 34px;
+}
+
+.btn:hover {
+    filter: brightness(120%);
+
+}
+
+.btn:active {
+    filter: brightness(90%);
+    transform: scale(0.9);
+}
+
+.btn.bg-grey {
+    background: #a6a6a6;
+    color: black;
+}
+
+
+.btn.bg-orange {
+    background: #ff9501;
+}
+
+.bottom-button {
+    width: 125px;
+    height: 7px;
+    background: white;
+    border-radius: 50px;
+    position: relative;
+    margin-top: 25px;
+    margin-left: 63px;
+
+}

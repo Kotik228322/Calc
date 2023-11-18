@@ -90,7 +90,6 @@ document.querySelector('.buttons').onclick = (event) => {
 
     function hideMathSign(button) { button.style.display = "none"; } function clearResult() { document.getElementById("result").value = ""; } function calculateResult() { var result = eval(document.getElementById("result").value); document.getElementById("result").value = result; }
 }
-
 document.querySelectorAll('.btn-number').forEach((item) => {
     item.onclick = () => {
         document.querySelector('#calc-number').innerText += item.innerText
